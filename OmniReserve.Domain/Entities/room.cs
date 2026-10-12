@@ -1,26 +1,38 @@
 using OmniReserve.Domain.Enums;
+
 namespace OmniReserve.Domain.Entities
 {
     public class Room
     {
         public Guid Id { get; private set; }
-        public String RoomNumber{ get; private set; }
-        public RoomType Type{ get; private set; }
-        public decimal PricePerNight{ get; private set; }
+        public String RoomNumber { get; private set; }
+        public RoomType Type { get; private set; }
+        public decimal PricePerNight { get; private set; }
         public bool IsAvailable { get; private set; }
-        public Room(string roomNumber, RoomType type, decimal pricePerNight)
-{
-    Id = Guid.NewGuid();
-    RoomNumber = roomNumber;
-    Type = type;
-    PricePerNight = pricePerNight;
-    IsAvailable = true;
-}
-                public void MarkAsUnavailable()
+
+        // Relación: una habitación puede tener muchas reservaciones
+        public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
+
+        // Constructor para Entity Framework Core
+        private Room()
+        {
+        }
+
+        public Room(string roomNumber, RoomType roomType, decimal pricePerNight)
+        {
+            Id = Guid.NewGuid();
+            RoomNumber = roomNumber;
+            Type = roomType;
+            PricePerNight = pricePerNight;
+            IsAvailable = true;
+        }
+
+        public void MarkAsUnavailable()
         {
             IsAvailable = false;
         }
-            public void MarkAsAvailable()
+
+        public void MarkAsAvailable()
         {
             IsAvailable = true;
         }
