@@ -6,3 +6,12 @@ Se instaló Entity Framework Core, se creó ApplicationDbContext y RoomConfigura
 ## Archivos de la entrega
 - `OmniReserve.Infrastructure/Persistence/ApplicationDbContext.cs` (encontrado)
 - `OmniReserve.Infrastructure/Persistence/Configurations/RoomConfiguration.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a mapear una entidad con Fluent API en Infrastructure, sin ensuciar el Dominio con atributos de base de datos.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
