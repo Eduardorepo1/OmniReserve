@@ -9,3 +9,12 @@ Solución de .NET con los proyectos Api, Application, Domain e Infrastructure y 
 - `OmniReserve.Application/OmniReserve.Application.csproj` (encontrado)
 - `OmniReserve.Domain/OmniReserve.Domain.csproj` (encontrado)
 - `OmniReserve.Infrastructure/OmniReserve.Infrastructure.csproj` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a crear una solución de .NET con la CLI, a separar el proyecto en capas (Api, Application, Domain e Infrastructure) y a configurar las referencias entre proyectos.
+
+## Corrección
+Limpia el archivo .http de la plantilla WeatherForecast
