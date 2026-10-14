@@ -6,3 +6,12 @@ Se configuró HasConversion para guardar EmailAddress como texto, con longitud m
 ## Archivos de la entrega
 - `OmniReserve.Infrastructure/Persistence/Configurations/UserConfiguration.cs` (encontrado)
 - `OmniReserve.Infrastructure/Migrations/*_ConfigureEmailAddress.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a usar HasConversion para guardar un Value Object como texto en la base de datos y a crear un índice único sobre el correo.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
