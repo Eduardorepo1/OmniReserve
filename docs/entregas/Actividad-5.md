@@ -8,3 +8,12 @@ Se instaló FluentValidation, se creó ValidationException y el ValidationBehavi
 - `OmniReserve.Application/Common/Behaviors/ValidationBehavior.cs` (encontrado)
 - `OmniReserve.Application/DependencyInjection.cs` (encontrado)
 - `OmniReserve.Application/Rooms/Commands/CreateRoom/CreateRoomCommandValidator.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí el principio Fail-Fast: validar los datos de entrada con FluentValidation en un Pipeline Behavior antes de ejecutar el Handler.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
