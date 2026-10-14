@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
-using OmniReserve.Infrastructure.Persistence;
 
 namespace OmniReserve.Infrastructure.Persistence.Repositories;
 
@@ -31,10 +30,11 @@ internal class RoomRepository : IRoomRepository
         return await _context.Rooms
             .FirstOrDefaultAsync(r => r.RoomNumber == roomNumber);
     }
-public async Task<List<Room>> GetRoomsByTypeRawAsync(string roomType)
-{
-    return await _context.Rooms
-        .FromSql($"SELECT * FROM \"Rooms\" WHERE \"Type\" = {roomType}")
-        .ToListAsync();
-   }
+
+    public async Task<List<Room>> GetRoomsByTypeRawAsync(string roomType)
+    {
+        return await _context.Rooms
+            .FromSql($"SELECT * FROM \"Rooms\" WHERE \"Type\" = {roomType}")
+            .ToListAsync();
+    }
 }
