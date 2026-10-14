@@ -7,3 +7,12 @@ Se creó GetReservationDetailsQuery, su handler y ReservationDetailsDto, que apl
 - `OmniReserve.Application/Reservations/Queries/GetReservationDetails/ReservationDetailsDto.cs` (encontrado)
 - `OmniReserve.Application/Reservations/Queries/GetReservationDetails/GetReservationDetailsQuery.cs` (encontrado)
 - `OmniReserve.Application/Reservations/Queries/GetReservationDetails/GetReservationDetailsQueryHandler.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a aplanar un grafo de entidades (reservación, usuario y habitación) en un solo DTO dentro del Handler.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
