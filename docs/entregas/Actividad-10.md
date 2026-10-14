@@ -9,3 +9,12 @@ Se instaló Npgsql.EntityFrameworkCore.PostgreSQL y EF Core Design, se configur�
 - `OmniReserve.Api/appsettings.json` (encontrado)
 - `OmniReserve.Infrastructure/DependencyInjection.cs` (encontrado)
 - `OmniReserve.Infrastructure/Migrations/*_InitialCreate.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a conectar EF Core con PostgreSQL usando Npgsql, a configurar la cadena de conexión y a generar y aplicar la migración inicial con Code-First.
+
+## Corrección
+Mueve la contrasena de PostgreSQL fuera de appsettings.json (user-secrets)
