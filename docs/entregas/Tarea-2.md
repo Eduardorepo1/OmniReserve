@@ -7,3 +7,12 @@ Se crearon AddApplication y AddInfrastructure como métodos de extensión de ISe
 - `OmniReserve.Application/DependencyInjection.cs` (encontrado)
 - `OmniReserve.Infrastructure/DependencyInjection.cs` (encontrado)
 - `OmniReserve.Api/Program.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a que cada capa registre sus propios servicios con métodos de extensión, dejando Program.cs limpio.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
