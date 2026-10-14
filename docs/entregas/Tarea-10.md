@@ -5,3 +5,12 @@ RoomRepository dejó de usar el diccionario en memoria y ahora usa ApplicationDb
 
 ## Archivos de la entrega
 - `OmniReserve.Infrastructure/Persistence/Repositories/RoomRepository.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a reemplazar el diccionario en memoria por ApplicationDbContext y que SaveChangesAsync es lo que guarda realmente en PostgreSQL.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
