@@ -10,3 +10,12 @@ Se implementaron los enums RoomType, ReservationStatus y Role, y las entidades U
 - `OmniReserve.Domain/Entities/user.cs` (encontrado)
 - `OmniReserve.Domain/Entities/room.cs` (encontrado)
 - `OmniReserve.Domain/Entities/reservation.cs` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a encapsular las entidades del dominio con private set y constructores que validan sus datos.
+
+## Corrección
+Agrega verificacion y aprendizaje de la entrega
