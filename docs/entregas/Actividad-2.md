@@ -15,3 +15,12 @@ Se organizaron las carpetas internas de cada proyecto según Clean Architecture:
 - `OmniReserve.Infrastructure/Authentication` (encontrado)
 - `OmniReserve.Api/Controllers` (encontrado)
 - `OmniReserve.Api/Middlewares` (encontrado)
+
+## Verificación
+La solución compila correctamente (`dotnet build`).
+
+## Qué aprendí
+Aprendí a organizar las carpetas internas de cada proyecto siguiendo Clean Architecture, para saber dónde va cada clase.
+
+## Corrección
+Agrega .gitkeep para que Git conserve las carpetas vacias Users y Authentication
